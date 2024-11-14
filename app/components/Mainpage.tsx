@@ -16,7 +16,7 @@ export function TypewriterEffectSmoothDemo() {
       text: "With",
     },
     {
-      text: "Teammfinder",
+      text: "TeamSync",
       className: "text-blue-500 dark:text-blue-500",
     },
   ];

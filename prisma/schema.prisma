@@ -34,10 +34,11 @@ model JoinRequest {
 }
 
 model Notification {
-  id Int @id @default(autoincrement())
-
+  id                Int      @id @default(autoincrement())
   userEmail         String
   projectowneremail String
   projectId         Int
-  project           Project @relation(fields: [projectId], references: [id])
+  status            String   @default("pending") // default status
+  project           Project  @relation(fields: [projectId], references: [id])
 }
+
